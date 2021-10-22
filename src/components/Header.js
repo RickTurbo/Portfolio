@@ -46,7 +46,7 @@ function Header() {
             Rikuto Kojima
           </Text>
           <Text color={isDark ? "gray.200" : "gray.500"}>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            イタリアのサッカーチーム　SSCナポリのサイトを作りました
           </Text>
           <Button
             mt={8}
@@ -55,7 +55,7 @@ function Header() {
               window.open("https://quizzical-bartik-62de5a.netlify.app/")
             }
           >
-            Hire Me
+            Napoli
           </Button>
         </Box>
         <Image
@@ -66,7 +66,6 @@ function Header() {
           backgroundColor="transparent"
           boxShadow="1g"
           boxSize="300px"
-          src=""
         />
       </Flex>
     </Stack>

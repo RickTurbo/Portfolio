@@ -11,7 +11,8 @@ import {
   FaMoon,
   FaInstagram,
   FaGithub,
-  FaLinkedin
+  FaLinkedin,
+  FaTwitter
 } from "react-icons/fa";
 import Header from "./components/Header";
 import Profile from "./components/Profile";
@@ -29,22 +30,13 @@ function App() {
         </Heading>
 
         <Spacer></Spacer>
-        <IconButton
-          icon={<FaLinkedin />}
-          isRound="true"
-          onClick={toggleColorMode}
-        ></IconButton>
-        <IconButton
-          ml={2}
-          icon={<FaInstagram />}
-          isRound="true"
-          onClick={toggleColorMode}
-        ></IconButton>
+        <IconButton icon={<FaTwitter />} isRound="true"></IconButton>
+        <IconButton ml={2} icon={<FaInstagram />} isRound="true"></IconButton>
         <IconButton
           ml={2}
           icon={<FaGithub />}
           isRound="true"
-          onClick={toggleColorMode}
+          onClick={() => window.open("https://github.com/RickTurbo")}
         ></IconButton>
         <IconButton
           ml={8}
