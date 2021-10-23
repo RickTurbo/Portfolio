@@ -30,7 +30,7 @@ function Header() {
       <Flex
         direction={isNotSmallerScreen ? "row" : "column"}
         spacing="200px"
-        p={isNotSmallerScreen ? "32" : 0}
+        p={isNotSmallerScreen ? "32" : "0"}
         alignSelf="flex-start"
       >
         <Box mt={isNotSmallerScreen ? "0" : 16} align="flex-start">
@@ -65,7 +65,8 @@ function Header() {
           borderRadius="full"
           backgroundColor="transparent"
           boxShadow="1g"
-          boxSize="300px"
+          // boxSize="300px"
+          // src={}
         />
       </Flex>
     </Stack>

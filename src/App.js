@@ -11,7 +11,6 @@ import {
   FaMoon,
   FaInstagram,
   FaGithub,
-  FaLinkedin,
   FaTwitter
 } from "react-icons/fa";
 import Header from "./components/Header";
