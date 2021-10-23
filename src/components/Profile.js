@@ -7,7 +7,8 @@ import {
   useMediaQuery
 } from "@chakra-ui/react";
 import React from "react";
-import { DiCodeigniter, DiAndroid, DiWebplatform } from "react-icons/di";
+import { DiReact, DiJavascript1 } from "react-icons/di";
+import { SiChakraui } from "react-icons/si";
 
 function Profile() {
   const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
@@ -40,9 +41,9 @@ function Profile() {
             w="30vh"
             justify="flex-end"
           >
-            <Icon color="white" p="4" as={DiAndroid} w="24" h="24"></Icon>
+            <Icon color="white" p="4" as={DiJavascript1} w="24" h="24"></Icon>
             <Text color="white" p="4" fontSize="xl" fontWeight="semibold">
-              Android Apps
+              Javascript
             </Text>
           </Flex>
           <Flex
@@ -56,9 +57,9 @@ function Profile() {
             justify="flex-end"
             _hover={{ bg: "teal.400" }}
           >
-            <Icon color="black" p="4" as={DiCodeigniter} w="24" h="24"></Icon>
+            <Icon color="black" p="4" as={DiReact} w="24" h="24"></Icon>
             <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
-              Flutter Apps
+              React
             </Text>
           </Flex>
           <Flex
@@ -72,9 +73,9 @@ function Profile() {
             justify="flex-end"
             _hover={{ bg: "green.400" }}
           >
-            <Icon color="black" p="4" as={DiWebplatform} w="24" h="24"></Icon>
+            <Icon color="black" p="4" as={SiChakraui} w="24" h="24"></Icon>
             <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
-              Web Apps
+              Chakra UI
             </Text>
           </Flex>
         </Flex>
