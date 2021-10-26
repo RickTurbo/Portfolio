@@ -25,7 +25,7 @@ function App() {
     <VStack p={5}>
       <Flex w="100%">
         <Heading ml="8" size="md" fontWeight="semibold" color="cyan.400">
-          im RickTurboooo
+          im RickTurbo
         </Heading>
 
         <Spacer></Spacer>
