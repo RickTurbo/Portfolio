@@ -57,6 +57,19 @@ function Header() {
           >
             Napoli
           </Button>
+
+          <Text color={isDark ? "gray.200" : "gray.500"} mt="8">
+            TODOアプリを作りました
+          </Text>
+          <Button
+            mt={8}
+            colorScheme="blue"
+            onClick={() =>
+              window.open("https://adoring-meninsky-698127.netlify.app")
+            }
+          >
+            Todo App
+          </Button>
         </Box>
         <Image
           alignSelf="center"
