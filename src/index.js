@@ -8,7 +8,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
     <ChakraProvider>
-      <ColorModeScript initialColorMode="light"></ColorModeScript>
+      <ColorModeScript initialColorMode="dark"></ColorModeScript>
       <App />
     </ChakraProvider>
   </StrictMode>,
