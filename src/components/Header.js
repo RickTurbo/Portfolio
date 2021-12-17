@@ -11,7 +11,14 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import React from "react";
-import { fadeInUp, MotionBox, MotionContainer } from "../animations/variants";
+import {
+  fadeInRight,
+  fadeInUp,
+  MotionBox,
+  MotionContainer,
+  MotionFlex,
+  MotionHeading,
+} from "../animations/variants";
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -37,11 +44,12 @@ export const letter = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: { duration: 1, ...transition, type: "spring", bounce: 0.6 },
+    transition: { duration: 1, ...transition, type: "spring", bounce: 0.4 },
   },
 };
 
 function Header() {
+  
   const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
 
@@ -64,21 +72,42 @@ function Header() {
           p={isNotSmallerScreen ? "32" : "0"}
           alignSelf="flex-start"
         >
-          <Box mt={isNotSmallerScreen ? "0" : 16}>
-            <MotionBox variants={fadeInUp}>
-              <MotionBox fontSize="5xl" fontWeight="semibold">
+          <MotionBox mt={isNotSmallerScreen ? "0" : 16}>
+            <MotionBox>
+              <MotionBox fontSize="5xl" fontWeight="semibold" variants={fadeInRight}>
                 Hi, I am
               </MotionBox>
-              <MotionBox
-                fontSize="7xl"
-                fontWeight="bold"
-                bgGradient="linear(to-r, cyan.400,blue.500,purple.600)"
+              <MotionHeading
                 bgClip="text"
+                fontSize={{
+                  sm: "4xl",
+                  md: "7xl",
+                  lg: "7xl",
+                  xl: "7xl",
+                  base: "4xl",
+                }}
+                color="blue.400"
+                fontWeight="extrabold"
+                bgGradient="linear(to-r, cyan.400,blue.500,purple.600)"
               >
-                Rikuto Kojima
-              </MotionBox>
+                <MotionFlex variants={Name}>
+                  <MotionBox variants={letter}>K</MotionBox>
+                  <MotionBox variants={letter}>o</MotionBox>
+                  <MotionBox variants={letter}>j</MotionBox>
+                  <MotionBox variants={letter}>i</MotionBox>
+                  <MotionBox variants={letter}>m</MotionBox>
+                  <MotionBox variants={letter}>a</MotionBox>
+                  <MotionBox variants={letter} mr={10}></MotionBox>
+                  <MotionBox variants={letter}>R</MotionBox>
+                  <MotionBox variants={letter}>i</MotionBox>
+                  <MotionBox variants={letter}>k</MotionBox>
+                  <MotionBox variants={letter}>u</MotionBox>
+                  <MotionBox variants={letter}>t</MotionBox>
+                  <MotionBox variants={letter}>o</MotionBox>
+                </MotionFlex>
+              </MotionHeading>
             </MotionBox>
-          </Box>
+          </MotionBox>
 
           <Image
             alignSelf="center"

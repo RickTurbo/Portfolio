@@ -45,7 +45,7 @@ function App() {
           onClick={toggleColorMode}
         ></IconButton>
       </Flex>
-
+      
       <Header />
       {/* <Social /> */}
       <Profile />
