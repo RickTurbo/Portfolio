@@ -1,17 +1,18 @@
 import {
+  Container,
   Flex,
   Heading,
   IconButton,
   Spacer,
   useColorMode,
-  VStack
+  VStack,
 } from "@chakra-ui/react";
 import {
   FaSun,
   FaMoon,
   FaInstagram,
   FaGithub,
-  FaTwitter
+  FaTwitter,
 } from "react-icons/fa";
 import Header from "./components/Header";
 import Profile from "./components/Profile";
@@ -24,9 +25,9 @@ function App() {
   return (
     <VStack p={5}>
       <Flex w="100%">
-        <Heading ml="8" size="md" fontWeight="semibold" color="cyan.400">
+        {/* <Heading ml="8" size="md" fontWeight="semibold" color="cyan.400">
           im RickTurbo
-        </Heading>
+        </Heading> */}
 
         <Spacer></Spacer>
         <IconButton icon={<FaTwitter />} isRound="true"></IconButton>
@@ -44,9 +45,10 @@ function App() {
           onClick={toggleColorMode}
         ></IconButton>
       </Flex>
-      <Header></Header>
-      <Social></Social>
-      <Profile></Profile>
+
+      <Header />
+      {/* <Social /> */}
+      <Profile />
     </VStack>
   );
 }

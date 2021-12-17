@@ -2,12 +2,13 @@ import {
   Box,
   Button,
   Circle,
+  Container,
   Flex,
   Image,
   Stack,
   Text,
   useColorMode,
-  useMediaQuery
+  useMediaQuery,
 } from "@chakra-ui/react";
 import React from "react";
 
@@ -18,96 +19,100 @@ function Header() {
   const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
   return (
-    <Stack>
-      <Circle
-        position="absolute"
-        bg="blue.100"
-        opacity="0.1"
-        w="300px"
-        h="300px"
-        alignSelf="flex-end"
-      />
-      <Flex
-        direction={isNotSmallerScreen ? "row" : "column"}
-        spacing="200px"
-        p={isNotSmallerScreen ? "32" : "0"}
-        alignSelf="flex-start"
-      >
-        <Box mt={isNotSmallerScreen ? "0" : 16} align="flex-start">
-          <Text fontSize="5xl" fontWeight="semibold">
-            Hi, I am
-          </Text>
-          <Text
-            fontSize="7xl"
-            fontWeight="bold"
-            bgGradient="linear(to-r, cyan.400,blue.500,purple.600)"
-            bgClip="text"
-          >
-            Rikuto Kojima
-          </Text>
-          <Text
-            color={isDark ? "gray.200" : "gray.500"}
-            mt={20}
-            fontWeight="bold"
-          >
-            イタリアのサッカーチーム　SSCナポリのサイトを作りました
-          </Text>
-          <Button
-            mt={8}
-            colorScheme="blue"
-            onClick={() =>
-              window.open("https://quizzical-bartik-62de5a.netlify.app/")
-            }
-          >
-            Napoli
-          </Button>
-
-          <Text
-            color={isDark ? "gray.200" : "gray.500"}
-            mt="8"
-            fontWeight="bold"
-          >
-            TODOアプリを作りました
-          </Text>
-          <Button
-            mt={8}
-            colorScheme="red"
-            onClick={() =>
-              window.open("https://adoring-meninsky-698127.netlify.app")
-            }
-          >
-            Todo App
-          </Button>
-
-          <Text
-            color={isDark ? "gray.200" : "gray.500"}
-            mt="8"
-            fontWeight="bold"
-          >
-            世界の天気が分かるアプリを作りました
-          </Text>
-          <Button
-            mt={8}
-            colorScheme="yellow"
-            onClick={() =>
-              window.open("https://blissful-mayer-f75f5e.netlify.app")
-            }
-          >
-            Weather App
-          </Button>
-        </Box>
-        <Image
-          alignSelf="center"
-          mt={isNotSmallerScreen ? "0" : "12"}
-          mb={isNotSmallerScreen ? "0" : "12"}
-          borderRadius="full"
-          backgroundColor="transparent"
-          boxShadow="1g"
-          // boxSize="300px"
-          // src={}
+    <Container maxW="container.xl">
+      <Stack>
+        <Circle
+          position="absolute"
+          bg="blue.100"
+          opacity="0.1"
+          w="300px"
+          h="300px"
+          alignSelf="flex-end"
         />
-      </Flex>
-    </Stack>
+        <Flex
+          direction={isNotSmallerScreen ? "row" : "column"}
+          spacing="200px"
+          p={isNotSmallerScreen ? "32" : "0"}
+          alignSelf="flex-start"
+        >
+          <Box mt={isNotSmallerScreen ? "0" : 16} align="flex-start">
+            <Text fontSize="5xl" fontWeight="semibold">
+              Hi, I am
+            </Text>
+            <Text
+              fontSize="7xl"
+              fontWeight="bold"
+              bgGradient="linear(to-r, cyan.400,blue.500,purple.600)"
+              bgClip="text"
+            >
+              Rikuto Kojima
+            </Text>
+
+            <Text
+              color={isDark ? "gray.200" : "gray.500"}
+              mt={20}
+              fontWeight="bold"
+            >
+              イタリアのサッカーチーム SSCナポリのサイトを作りました
+            </Text>
+            <Button
+              mt={8}
+              colorScheme="blue"
+              onClick={() =>
+                window.open("https://quizzical-bartik-62de5a.netlify.app/")
+              }
+            >
+              Napoli
+            </Button>
+
+            <Text
+              color={isDark ? "gray.200" : "gray.500"}
+              mt="8"
+              fontWeight="bold"
+            >
+              TODOアプリを作りました
+            </Text>
+            <Button
+              mt={8}
+              colorScheme="red"
+              onClick={() =>
+                window.open("https://adoring-meninsky-698127.netlify.app")
+              }
+            >
+              Todo App
+            </Button>
+
+            <Text
+              color={isDark ? "gray.200" : "gray.500"}
+              mt="8"
+              fontWeight="bold"
+            >
+              世界の天気が分かるアプリを作りました
+            </Text>
+            <Button
+              mt={8}
+              colorScheme="yellow"
+              onClick={() =>
+                window.open("https://blissful-mayer-f75f5e.netlify.app")
+              }
+            >
+              Weather App
+            </Button>
+            
+          </Box>
+          <Image
+            alignSelf="center"
+            mt={isNotSmallerScreen ? "0" : "12"}
+            mb={isNotSmallerScreen ? "0" : "12"}
+            borderRadius="full"
+            backgroundColor="transparent"
+            boxShadow="1g"
+            // boxSize="300px"
+            // src={}
+          />
+        </Flex>
+      </Stack>
+    </Container>
   );
 }
 

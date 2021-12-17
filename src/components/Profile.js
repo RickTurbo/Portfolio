@@ -1,5 +1,6 @@
 import {
   Box,
+  Container,
   Flex,
   Heading,
   Icon,
@@ -14,6 +15,7 @@ function Profile() {
   const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
   return (
+    <Container maxW="container.xl">
     <Flex
       direction={isNotSmallerScreen ? "row" : "column"}
       w="100%"
@@ -81,6 +83,7 @@ function Profile() {
         </Flex>
       </Box>
     </Flex>
+    </Container>
   );
 }
 
