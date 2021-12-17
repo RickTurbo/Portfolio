@@ -11,6 +11,35 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import React from "react";
+import { fadeInUp, MotionBox, MotionContainer } from "../animations/variants";
+
+const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
+
+export const Name = {
+  hidden: {
+    y: 0,
+  },
+  visible: {
+    y: 0,
+    transition: {
+      delayChildren: 0.6,
+      staggerChildren: 0.1,
+      staggerDirection: 1,
+    },
+  },
+};
+
+export const letter = {
+  hidden: {
+    y: 200,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { duration: 1, ...transition, type: "spring", bounce: 0.6 },
+  },
+};
 
 function Header() {
   const { colorMode } = useColorMode();
@@ -19,7 +48,7 @@ function Header() {
   const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
   return (
-    <Container maxW="container.xl">
+    <MotionContainer maxW="container.xl" initial="hidden" animate="visible">
       <Stack>
         <Circle
           position="absolute"
@@ -35,71 +64,22 @@ function Header() {
           p={isNotSmallerScreen ? "32" : "0"}
           alignSelf="flex-start"
         >
-          <Box mt={isNotSmallerScreen ? "0" : 16} align="flex-start">
-            <Text fontSize="5xl" fontWeight="semibold">
-              Hi, I am
-            </Text>
-            <Text
-              fontSize="7xl"
-              fontWeight="bold"
-              bgGradient="linear(to-r, cyan.400,blue.500,purple.600)"
-              bgClip="text"
-            >
-              Rikuto Kojima
-            </Text>
-
-            <Text
-              color={isDark ? "gray.200" : "gray.500"}
-              mt={20}
-              fontWeight="bold"
-            >
-              イタリアのサッカーチーム SSCナポリのサイトを作りました
-            </Text>
-            <Button
-              mt={8}
-              colorScheme="blue"
-              onClick={() =>
-                window.open("https://quizzical-bartik-62de5a.netlify.app/")
-              }
-            >
-              Napoli
-            </Button>
-
-            <Text
-              color={isDark ? "gray.200" : "gray.500"}
-              mt="8"
-              fontWeight="bold"
-            >
-              TODOアプリを作りました
-            </Text>
-            <Button
-              mt={8}
-              colorScheme="red"
-              onClick={() =>
-                window.open("https://adoring-meninsky-698127.netlify.app")
-              }
-            >
-              Todo App
-            </Button>
-
-            <Text
-              color={isDark ? "gray.200" : "gray.500"}
-              mt="8"
-              fontWeight="bold"
-            >
-              世界の天気が分かるアプリを作りました
-            </Text>
-            <Button
-              mt={8}
-              colorScheme="yellow"
-              onClick={() =>
-                window.open("https://blissful-mayer-f75f5e.netlify.app")
-              }
-            >
-              Weather App
-            </Button>
-            
+          <Box mt={isNotSmallerScreen ? "0" : 16}>
+            <MotionBox variants={fadeInUp}>
+              <MotionBox fontSize="5xl" fontWeight="semibold">
+                Hi, I am
+              </MotionBox>
+              <MotionBox
+                fontSize="7xl"
+                fontWeight="bold"
+                bgGradient="linear(to-r, cyan.400,blue.500,purple.600)"
+                bgClip="text"
+              >
+                Rikuto Kojima
+              </MotionBox>
+            </MotionBox>
           </Box>
+
           <Image
             alignSelf="center"
             mt={isNotSmallerScreen ? "0" : "12"}
@@ -112,7 +92,7 @@ function Header() {
           />
         </Flex>
       </Stack>
-    </Container>
+    </MotionContainer>
   );
 }
 
