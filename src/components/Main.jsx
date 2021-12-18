@@ -195,7 +195,15 @@ function Main() {
             base: "10",
           }}
         >
-          <Image w="100%" src={Lozano} borderRadius="lg" />
+          <Image
+            w="100%"
+            src={Lozano}
+            borderRadius="lg"
+            onClick={() =>
+              window.open("https://quizzical-bartik-62de5a.netlify.app/")
+            }
+            _hover={{ opacity: 0.9 }}
+          />
           <Accordion allowToggle mt={5}>
             <AccordionItem>
               <h2>
