@@ -1,4 +1,10 @@
-import { Flex, Heading, IconButton, Spacer, useColorMode } from "@chakra-ui/react";
+import {
+  Flex,
+  Heading,
+  IconButton,
+  Spacer,
+  useColorMode,
+} from "@chakra-ui/react";
 import {
   FaSun,
   FaMoon,
@@ -12,8 +18,16 @@ function Header() {
   const isDark = colorMode === "dark";
 
   return (
-    <Flex w="100%">
-
+    <Flex
+      w="100%"
+      mb={{
+        sm: "10",
+        md: "20",
+        lg: "20",
+        xl: "20",
+        base: "10",
+      }}
+    >
       <Spacer></Spacer>
       <IconButton icon={<FaTwitter />} isRound="true"></IconButton>
       <IconButton ml={2} icon={<FaInstagram />} isRound="true"></IconButton>
