@@ -27,6 +27,7 @@ import {
   MotionHeading,
 } from "../animations/variants";
 import Lozano from "../assets/Lozano.JPG";
+import Napoli_1 from "../assets/Napoli-1.jpg";
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -153,8 +154,16 @@ function Main() {
         gap={6}
       >
         <Box>
-          <Image w="100%" src={Lozano} borderRadius="lg" />
-          <Accordion allowToggle mt={5}>
+          <Image
+            w="100%"
+            src={Napoli_1}
+            borderRadius="lg"
+            onClick={() =>
+              window.open("https://optimistic-engelbart-dd3563.netlify.app")
+            }
+            _hover={{ opacity: 0.9 }}
+          />
+          <Accordion defaultIndex={[0]} allowMultiple mt={5}>
             <AccordionItem>
               <h2>
                 <AccordionButton>
@@ -169,7 +178,7 @@ function Main() {
                     // eslint-disable-next-line react/jsx-no-duplicate-props
                     fontWeight="extrabold"
                   >
-                    Hirving Lozano 11
+                    Napoliのサイト
                   </Box>
                 </AccordionButton>
               </h2>
