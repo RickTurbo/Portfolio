@@ -142,7 +142,9 @@ function Main() {
         </Flex>
       </Stack>
 
-      <Heading mb="4">Work</Heading>
+      <MotionHeading variants={fadeInRight} mb="4">
+        Work
+      </MotionHeading>
       <Box mb={8}>
         <Divider w={52} color="blue.300" />
       </Box>
@@ -281,7 +283,7 @@ function Main() {
                     // eslint-disable-next-line react/jsx-no-duplicate-props
                     fontWeight="extrabold"
                   >
-                   Todo
+                    Todo App
                   </Box>
                 </AccordionButton>
               </h2>
@@ -331,7 +333,7 @@ function Main() {
                     // eslint-disable-next-line react/jsx-no-duplicate-props
                     fontWeight="extrabold"
                   >
-                    Weather
+                    Soccer Weather
                   </Box>
                 </AccordionButton>
               </h2>
