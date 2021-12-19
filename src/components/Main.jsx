@@ -26,8 +26,11 @@ import {
   MotionFlex,
   MotionHeading,
 } from "../animations/variants";
-import Lozano from "../assets/Lozano.JPG";
-import Napoli_1 from "../assets/Napoli-1.jpg";
+
+import Napoli_1 from "../assets/Napoli_1.jpg";
+import Napoli_2 from "../assets/Napoli_2.jpg";
+import Todo from "../assets/Todo.jpg";
+import Weather from "../assets/Weather.jpg";
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -206,14 +209,14 @@ function Main() {
         >
           <Image
             w="100%"
-            src={Lozano}
+            src={Napoli_2}
             borderRadius="lg"
             onClick={() =>
               window.open("https://quizzical-bartik-62de5a.netlify.app/")
             }
             _hover={{ opacity: 0.9 }}
           />
-          <Accordion allowToggle mt={5}>
+          <Accordion defaultIndex={[0]} allowMultiple mt={5} mt={5}>
             <AccordionItem>
               <h2>
                 <AccordionButton>
@@ -228,7 +231,7 @@ function Main() {
                     // eslint-disable-next-line react/jsx-no-duplicate-props
                     fontWeight="extrabold"
                   >
-                    Hirving Lozano 11
+                    Napoliのサイト２
                   </Box>
                 </AccordionButton>
               </h2>
@@ -254,8 +257,16 @@ function Main() {
             base: "10",
           }}
         >
-          <Image w="100%" src={Lozano} borderRadius="lg" />
-          <Accordion allowToggle mt={5}>
+          <Image
+            w="100%"
+            src={Todo}
+            borderRadius="lg"
+            onClick={() =>
+              window.open("https://adoring-meninsky-698127.netlify.app")
+            }
+            _hover={{ opacity: 0.9 }}
+          />
+          <Accordion defaultIndex={[0]} allowMultiple mt={5} mt={5}>
             <AccordionItem>
               <h2>
                 <AccordionButton>
@@ -270,7 +281,57 @@ function Main() {
                     // eslint-disable-next-line react/jsx-no-duplicate-props
                     fontWeight="extrabold"
                   >
-                    Hirving Lozano 11
+                   Todo
+                  </Box>
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                <Flex color="blue.300" justifyContent="center">
+                  <Box pr="4">MEXICO</Box>
+                  <Box pr="4">1995</Box>
+                  <Box>07/30</Box>
+                </Flex>
+                <Box pt="4" color="blue.700">
+                  あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                </Box>
+              </AccordionPanel>
+            </AccordionItem>
+          </Accordion>
+        </Box>
+        <Box
+          mt={{
+            sm: "10",
+            md: "0",
+            lg: "0",
+            xl: "0",
+            base: "10",
+          }}
+        >
+          <Image
+            w="100%"
+            src={Weather}
+            borderRadius="lg"
+            onClick={() =>
+              window.open("https://blissful-mayer-f75f5e.netlify.app")
+            }
+            _hover={{ opacity: 0.9 }}
+          />
+          <Accordion defaultIndex={[0]} allowMultiple mt={5} mt={5}>
+            <AccordionItem>
+              <h2>
+                <AccordionButton>
+                  <Box
+                    flex="1"
+                    textAlign="left"
+                    fontWeight="bold"
+                    color="blue.300"
+                    // eslint-disable-next-line react/jsx-no-duplicate-props
+                    textAlign="center"
+                    fontSize="xl"
+                    // eslint-disable-next-line react/jsx-no-duplicate-props
+                    fontWeight="extrabold"
+                  >
+                    Weather
                   </Box>
                 </AccordionButton>
               </h2>
