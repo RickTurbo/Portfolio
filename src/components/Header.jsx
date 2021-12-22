@@ -1,10 +1,4 @@
-import {
-  Flex,
-  Heading,
-  IconButton,
-  Spacer,
-  useColorMode,
-} from "@chakra-ui/react";
+import { Flex, IconButton, Spacer, useColorMode } from "@chakra-ui/react";
 import {
   FaSun,
   FaMoon,

@@ -4,16 +4,12 @@ import {
   AccordionItem,
   AccordionPanel,
   Box,
-  Button,
   Circle,
-  Container,
   Divider,
   Flex,
   Grid,
-  Heading,
   Image,
   Stack,
-  Text,
   useColorMode,
   useMediaQuery,
 } from "@chakra-ui/react";
@@ -136,14 +132,14 @@ function Main() {
             borderRadius="full"
             backgroundColor="transparent"
             boxShadow="1g"
-            // boxSize="300px"
-            // src={}
+            boxSize="300px"
+            src={Napoli_1}
           />
         </Flex>
       </Stack>
 
       <MotionHeading variants={fadeInRight} mb="4">
-        Work
+        Works
       </MotionHeading>
       <Box mb={8}>
         <Divider w={52} color="blue.300" />
@@ -158,7 +154,7 @@ function Main() {
         }}
         gap={6}
       >
-        <Box>
+        <MotionBox variants={fadeInUp}>
           <Image
             w="100%"
             src={Napoli_1}
@@ -183,15 +179,15 @@ function Main() {
                     // eslint-disable-next-line react/jsx-no-duplicate-props
                     fontWeight="extrabold"
                   >
-                    Napoliのサイト
+                    Napoliのサイト（新）
                   </Box>
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
                 <Flex color="blue.300" justifyContent="center">
-                  <Box pr="4">MEXICO</Box>
-                  <Box pr="4">1995</Box>
-                  <Box>07/30</Box>
+                  <Box pr="4">skil:</Box>
+                  <Box pr="4">React, chakra-ui</Box>
+                  
                 </Flex>
                 <Box pt="4" color="blue.700">
                   あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
@@ -199,8 +195,8 @@ function Main() {
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
-        </Box>
-        <Box
+        </MotionBox>
+        <MotionBox
           mt={{
             sm: "10",
             md: "0",
@@ -208,6 +204,7 @@ function Main() {
             xl: "0",
             base: "10",
           }}
+          variants={fadeInUp}
         >
           <Image
             w="100%"
@@ -233,15 +230,15 @@ function Main() {
                     // eslint-disable-next-line react/jsx-no-duplicate-props
                     fontWeight="extrabold"
                   >
-                    Napoliのサイト２
+                    Napoliのサイト(旧)
                   </Box>
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
                 <Flex color="blue.300" justifyContent="center">
-                  <Box pr="4">MEXICO</Box>
-                  <Box pr="4">1995</Box>
-                  <Box>07/30</Box>
+                  <Box pr="4">skil:</Box>
+                  <Box pr="4">html, scss, javascript</Box>
+                  
                 </Flex>
                 <Box pt="4" color="blue.700">
                   あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
@@ -249,8 +246,8 @@ function Main() {
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
-        </Box>
-        <Box
+        </MotionBox>
+        <MotionBox
           mt={{
             sm: "10",
             md: "0",
@@ -258,6 +255,7 @@ function Main() {
             xl: "0",
             base: "10",
           }}
+          variants={fadeInUp}
         >
           <Image
             w="100%"
@@ -289,9 +287,9 @@ function Main() {
               </h2>
               <AccordionPanel pb={4}>
                 <Flex color="blue.300" justifyContent="center">
-                  <Box pr="4">MEXICO</Box>
-                  <Box pr="4">1995</Box>
-                  <Box>07/30</Box>
+                  <Box pr="4">skil: </Box>
+                  <Box pr="4">React, chakra-ui</Box>
+                  
                 </Flex>
                 <Box pt="4" color="blue.700">
                   あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
@@ -299,7 +297,7 @@ function Main() {
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
-        </Box>
+        </MotionBox>
         <Box
           mt={{
             sm: "10",
@@ -339,9 +337,9 @@ function Main() {
               </h2>
               <AccordionPanel pb={4}>
                 <Flex color="blue.300" justifyContent="center">
-                  <Box pr="4">MEXICO</Box>
-                  <Box pr="4">1995</Box>
-                  <Box>07/30</Box>
+                  <Box pr="4">skil:</Box>
+                  <Box pr="4">React, chakra-ui, API</Box>
+                
                 </Flex>
                 <Box pt="4" color="blue.700">
                   あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
