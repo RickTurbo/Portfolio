@@ -290,7 +290,7 @@ function Main() {
                   <Box pr="4">React, chakra-ui</Box>
                 </Flex>
                 <Box pt="4" color="blue.700">
-                  初めてのchakra-uiを利用したアプリだったので、積極的にいろいろな機能を追加しました。Todo Appの作成を通して、Reactの基本であるuseStateや、
+                  Reactとchakra-uiを利用した初めてのアプリだったので、苦戦しながら少しずつ進めていきました。Todo Appの作成を通して、Reactの基本であるuseStateや、コンポーネント分割を学びました。
                 </Box>
               </AccordionPanel>
             </AccordionItem>
