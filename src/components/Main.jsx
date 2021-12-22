@@ -134,6 +134,7 @@ function Main() {
             boxShadow="1g"
             boxSize="300px"
             src={Napoli_1}
+            ml={"20"}
           />
         </Flex>
       </Stack>
@@ -187,10 +188,9 @@ function Main() {
                 <Flex color="blue.300" justifyContent="center">
                   <Box pr="4">skil:</Box>
                   <Box pr="4">React, chakra-ui</Box>
-                  
                 </Flex>
                 <Box pt="4" color="blue.700">
-                  あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                  私が好きなサッカーチームであるSSC NAPOLIの紹介サイトを作りました。このサイトはreact-router-domを利用したページ遷移や、framer-motionを利用したアニメーションの追加など、動きのあるサイトになるように工夫しました。思いついたことをその都度追加していったので、とても勉強になりました。まだ作成途中なので、どんどんアップデートし続けていきたいと思います。
                 </Box>
               </AccordionPanel>
             </AccordionItem>
@@ -238,10 +238,9 @@ function Main() {
                 <Flex color="blue.300" justifyContent="center">
                   <Box pr="4">skil:</Box>
                   <Box pr="4">html, scss, javascript</Box>
-                  
                 </Flex>
                 <Box pt="4" color="blue.700">
-                  あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                Udemyで学びながら、初めてオリジナルサイトを作りました。全てが初めてだったので、原因不明のエラーなどがよく起こりとても苦戦しましたが、完成したときはとても達成感がありました。javascriptを利用してサイトを作ることも初めてだったので、なかなか理解できずに苦労しました。
                 </Box>
               </AccordionPanel>
             </AccordionItem>
@@ -289,10 +288,9 @@ function Main() {
                 <Flex color="blue.300" justifyContent="center">
                   <Box pr="4">skil: </Box>
                   <Box pr="4">React, chakra-ui</Box>
-                  
                 </Flex>
                 <Box pt="4" color="blue.700">
-                  あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                  初めてのchakra-uiを利用したアプリだったので、積極的にいろいろな機能を追加しました。
                 </Box>
               </AccordionPanel>
             </AccordionItem>
@@ -339,10 +337,9 @@ function Main() {
                 <Flex color="blue.300" justifyContent="center">
                   <Box pr="4">skil:</Box>
                   <Box pr="4">React, chakra-ui, API</Box>
-                
                 </Flex>
                 <Box pt="4" color="blue.700">
-                  あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                  APIを使った情報の取得の方法を学ぶために、OpenWeatherのAPIを利用してWebアプリを作りました。私はサッカーが好きなので、サッカーが盛んな国々を選び、情報を取得しました。
                 </Box>
               </AccordionPanel>
             </AccordionItem>
