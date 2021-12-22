@@ -240,7 +240,7 @@ function Main() {
                   <Box pr="4">html, scss, javascript</Box>
                 </Flex>
                 <Box pt="4" color="blue.700">
-                Udemyで学びながら、初めてオリジナルサイトを作りました。全てが初めてだったので、原因不明のエラーなどがよく起こりとても苦戦しましたが、完成したときはとても達成感がありました。javascriptを利用してサイトを作ることも初めてだったので、なかなか理解できずに苦労しました。
+                Udemyで学びながら、初めてオリジナルサイトを作りました。全てが初めてだったので、原因不明のエラーなどがよく起こりとても苦戦しましたが、完成したときはとても達成感がありました。javascriptを利用してサイトを作ることも初めてだったので、なかなか理解できずに苦労しました。自分の手でサイトを作り上げる楽しさを、このサイトの作成を通して知りました。
                 </Box>
               </AccordionPanel>
             </AccordionItem>
@@ -290,7 +290,7 @@ function Main() {
                   <Box pr="4">React, chakra-ui</Box>
                 </Flex>
                 <Box pt="4" color="blue.700">
-                  初めてのchakra-uiを利用したアプリだったので、積極的にいろいろな機能を追加しました。
+                  初めてのchakra-uiを利用したアプリだったので、積極的にいろいろな機能を追加しました。Todo Appの作成を通して、Reactの基本であるuseStateや、
                 </Box>
               </AccordionPanel>
             </AccordionItem>
@@ -339,7 +339,7 @@ function Main() {
                   <Box pr="4">React, chakra-ui, API</Box>
                 </Flex>
                 <Box pt="4" color="blue.700">
-                  APIを使った情報の取得の方法を学ぶために、OpenWeatherのAPIを利用してWebアプリを作りました。私はサッカーが好きなので、サッカーが盛んな国々を選び、情報を取得しました。
+                  APIを使った情報の取得の方法を学ぶために、OpenWeatherのAPIを利用して、世界の天気が分かるWebアプリを作りました。私はサッカーが好きなので、サッカーが盛んな国々を選び、情報を取得しました。APIを使うことが初めてだったので詰まるところもありましたが、使いこなすことが出来れば様々なことに利用できることが分かったので、積極的に使っていきたいです。
                 </Box>
               </AccordionPanel>
             </AccordionItem>
