@@ -21,12 +21,14 @@ import {
   MotionContainer,
   MotionFlex,
   MotionHeading,
+  MotionImage,
 } from "../animations/variants";
 
 import Napoli_1 from "../assets/Napoli_1.jpg";
 import Napoli_2 from "../assets/Napoli_2.jpg";
 import Todo from "../assets/Todo.jpg";
 import Weather from "../assets/Weather.jpg";
+import Lozano from "../assets/Lozano.JPG";
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -125,7 +127,7 @@ function Main() {
             </MotionBox>
           </MotionBox>
 
-          <Image
+          <MotionImage
             alignSelf="center"
             mt={isNotSmallerScreen ? "0" : "12"}
             mb={isNotSmallerScreen ? "0" : "12"}
@@ -133,8 +135,9 @@ function Main() {
             backgroundColor="transparent"
             boxShadow="1g"
             boxSize="300px"
-            src={Napoli_1}
+            src={Lozano}
             ml={"20"}
+            variants={fadeInUp}
           />
         </Flex>
       </Stack>
@@ -190,7 +193,8 @@ function Main() {
                   <Box pr="4">React, chakra-ui</Box>
                 </Flex>
                 <Box pt="4" color="blue.700">
-                  私が好きなサッカーチームであるSSC NAPOLIの紹介サイトを作りました。このサイトはreact-router-domを利用したページ遷移や、framer-motionを利用したアニメーションの追加など、動きのあるサイトになるように工夫しました。思いついたことをその都度追加していったので、とても勉強になりました。まだ作成途中なので、どんどんアップデートし続けていきたいと思います。
+                  私が好きなサッカーチームであるSSC
+                  NAPOLIの紹介サイトを作りました。このサイトはreact-router-domを利用したページ遷移や、framer-motionを利用したアニメーションの追加など、動きのあるサイトになるように工夫しました。思いついたことをその都度追加していったので、とても勉強になりました。まだ作成途中なので、どんどんアップデートし続けていきたいと思います。
                 </Box>
               </AccordionPanel>
             </AccordionItem>
@@ -240,7 +244,7 @@ function Main() {
                   <Box pr="4">html, scss, javascript</Box>
                 </Flex>
                 <Box pt="4" color="blue.700">
-                Udemyで学びながら、初めてオリジナルサイトを作りました。全てが初めてだったので、原因不明のエラーなどがよく起こりとても苦戦しましたが、完成したときはとても達成感がありました。javascriptを利用してサイトを作ることも初めてだったので、なかなか理解できずに苦労しました。自分の手でサイトを作り上げる楽しさを、このサイトの作成を通して知りました。
+                  Udemyで学びながら、初めてオリジナルサイトを作りました。全てが初めてだったので、原因不明のエラーなどがよく起こりとても苦戦しましたが、完成したときはとても達成感がありました。javascriptを利用してサイトを作ることも初めてだったので、なかなか理解できずに苦労しました。自分の手でサイトを作り上げる楽しさを、このサイトの作成を通して知りました。
                 </Box>
               </AccordionPanel>
             </AccordionItem>
@@ -290,7 +294,8 @@ function Main() {
                   <Box pr="4">React, chakra-ui</Box>
                 </Flex>
                 <Box pt="4" color="blue.700">
-                  Reactとchakra-uiを利用した初めてのアプリだったので、苦戦しながら少しずつ進めていきました。Todo Appの作成を通して、Reactの基本であるuseStateや、コンポーネント分割を学びました。
+                  Reactとchakra-uiを利用した初めてのアプリだったので、苦戦しながら少しずつ進めていきました。Todo
+                  Appの作成を通して、Reactの基本であるuseStateや、コンポーネント分割を学びました。
                 </Box>
               </AccordionPanel>
             </AccordionItem>

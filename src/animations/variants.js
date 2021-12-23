@@ -5,6 +5,7 @@ import {
   Flex,
   Grid,
   Heading,
+  Image,
   Text,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
@@ -22,6 +23,8 @@ export const MotionFlex = motion(Flex);
 export const MotionGrid = motion(Grid);
 
 export const MotionText = motion(Text);
+
+export const MotionImage = motion(Image);
 
 export const fadeInUp = {
   hidden: {

@@ -6,13 +6,14 @@ import {
   FaGithub,
   FaTwitter,
 } from "react-icons/fa";
+import { fadeInRight, fadeInUp, MotionFlex } from "../animations/variants";
 
 function Header() {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
 
   return (
-    <Flex
+    <MotionFlex
       w="100%"
       mb={{
         sm: "10",
@@ -21,6 +22,9 @@ function Header() {
         xl: "20",
         base: "10",
       }}
+      initial="hidden"
+      animate="visible"
+      variants={fadeInUp}
     >
       <Spacer></Spacer>
       <IconButton icon={<FaTwitter />} isRound="true"></IconButton>
@@ -37,7 +41,7 @@ function Header() {
         isRound="true"
         onClick={toggleColorMode}
       ></IconButton>
-    </Flex>
+    </MotionFlex>
   );
 }
 
