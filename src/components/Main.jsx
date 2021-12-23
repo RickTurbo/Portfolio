@@ -192,7 +192,7 @@ function Main() {
                   <Box pr="4">skil:</Box>
                   <Box pr="4">React, chakra-ui</Box>
                 </Flex>
-                <Box pt="4" color="blue.700">
+                <Box pt="4">
                   私が好きなサッカーチームであるSSC
                   NAPOLIの紹介サイトを作りました。このサイトはreact-router-domを利用したページ遷移や、framer-motionを利用したアニメーションの追加など、動きのあるサイトになるように工夫しました。思いついたことをその都度追加していったので、とても勉強になりました。まだ作成途中なので、どんどんアップデートし続けていきたいと思います。
                 </Box>
@@ -243,7 +243,7 @@ function Main() {
                   <Box pr="4">skil:</Box>
                   <Box pr="4">html, scss, javascript</Box>
                 </Flex>
-                <Box pt="4" color="blue.700">
+                <Box pt="4">
                   Udemyで学びながら、初めてオリジナルサイトを作りました。全てが初めてだったので、原因不明のエラーなどがよく起こりとても苦戦しましたが、完成したときはとても達成感がありました。javascriptを利用してサイトを作ることも初めてだったので、なかなか理解できずに苦労しました。自分の手でサイトを作り上げる楽しさを、このサイトの作成を通して知りました。
                 </Box>
               </AccordionPanel>
@@ -293,7 +293,7 @@ function Main() {
                   <Box pr="4">skil: </Box>
                   <Box pr="4">React, chakra-ui</Box>
                 </Flex>
-                <Box pt="4" color="blue.700">
+                <Box pt="4">
                   Reactとchakra-uiを利用した初めてのアプリだったので、苦戦しながら少しずつ進めていきました。Todo
                   Appの作成を通して、Reactの基本であるuseStateや、コンポーネント分割を学びました。
                 </Box>
@@ -343,7 +343,7 @@ function Main() {
                   <Box pr="4">skil:</Box>
                   <Box pr="4">React, chakra-ui, API</Box>
                 </Flex>
-                <Box pt="4" color="blue.700">
+                <Box pt="4">
                   APIを使った情報の取得の方法を学ぶために、OpenWeatherのAPIを利用して、世界の天気が分かるWebアプリを作りました。私はサッカーが好きなので、サッカーが盛んな国々を選び、情報を取得しました。APIを使うことが初めてだったので詰まるところもありましたが、使いこなすことが出来れば様々なことに利用できることが分かったので、積極的に使っていきたいです。
                 </Box>
               </AccordionPanel>
