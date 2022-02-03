@@ -28,7 +28,7 @@ import Napoli_1 from "../assets/Napoli_1.jpg";
 import Napoli_2 from "../assets/Napoli_2.jpg";
 import Todo from "../assets/Todo.jpg";
 import Weather from "../assets/Weather.jpg";
-import Lozano from "../assets/Lozano.JPG";
+import Rikuto from "../assets/Rikuto.jpeg";
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -135,7 +135,7 @@ function Main() {
             backgroundColor="transparent"
             boxShadow="1g"
             boxSize="300px"
-            src={Lozano}
+            src={Rikuto}
             ml={"20"}
             variants={fadeInUp}
           />
