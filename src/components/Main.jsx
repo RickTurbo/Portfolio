@@ -29,6 +29,7 @@ import Napoli_2 from "../assets/Napoli_2.jpg";
 import Todo from "../assets/Todo.jpg";
 import Weather from "../assets/Weather.jpg";
 import Rikuto from "../assets/Rikuto.jpeg";
+import bbs from "../assets/bbs.jpg";
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -350,6 +351,57 @@ function Main() {
             </AccordionItem>
           </Accordion>
         </Box>
+
+        <Box
+          mt={{
+            sm: "10",
+            md: "0",
+            lg: "0",
+            xl: "0",
+            base: "10",
+          }}
+        >
+          <Image
+            w="100%"
+            src={bbs}
+            borderRadius="lg"
+            onClick={() =>
+              window.open("http://laravel-bbs-app1.herokuapp.com/")
+            }
+            _hover={{ opacity: 0.9 }}
+          />
+          <Accordion defaultIndex={[0]} allowMultiple mt={5} mt={5}>
+            <AccordionItem>
+              <h2>
+                <AccordionButton>
+                  <Box
+                    flex="1"
+                    textAlign="left"
+                    fontWeight="bold"
+                    color="blue.300"
+                    // eslint-disable-next-line react/jsx-no-duplicate-props
+                    textAlign="center"
+                    fontSize="xl"
+                    // eslint-disable-next-line react/jsx-no-duplicate-props
+                    fontWeight="extrabold"
+                  >
+                    掲示板アプリ
+                  </Box>
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                <Flex color="blue.300" justifyContent="center">
+                  <Box pr="4">skil:</Box>
+                  <Box pr="4">Laravel, tailwindcss</Box>
+                </Flex>
+                <Box pt="4">
+                
+                </Box>
+              </AccordionPanel>
+            </AccordionItem>
+          </Accordion>
+        </Box>
+
       </Grid>
     </MotionContainer>
   );
