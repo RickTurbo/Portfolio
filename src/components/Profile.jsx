@@ -8,8 +8,8 @@ import {
   useMediaQuery
 } from "@chakra-ui/react";
 import React from "react";
-import { DiReact, DiJavascript1 } from "react-icons/di";
-import { SiChakraui } from "react-icons/si";
+import { DiReact, DiJavascript1,  } from "react-icons/di";
+import { SiChakraui, SiPhp, SiLaravel } from "react-icons/si";
 
 function Profile() {
   const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
@@ -19,7 +19,7 @@ function Profile() {
     <Flex
       direction={isNotSmallerScreen ? "row" : "column"}
       w="100%"
-      maxWidth={{ base: "100vh", md: "130vh", lg: "130vh", xl: "130vh" }}
+      maxWidth={{ base: "100vh", md: "100vh", lg: "100vh", xl: "100vh" }}
     >
       <Box alignSelf="center" px="32" py="16">
         <Heading fontWeight="extrabold" color="cyan.500" size="4xl">
@@ -39,8 +39,8 @@ function Profile() {
             direction="column"
             mt={4}
             bg="blue.400"
-            h="30vh"
-            w="30vh"
+            h="20vh"
+            w="20vh"
             justify="flex-end"
           >
             <Icon color="white" p="4" as={DiJavascript1} w="24" h="24"></Icon>
@@ -54,8 +54,8 @@ function Profile() {
             mt={4}
             ml={isNotSmallerScreen ? 4 : 0}
             bg="gray.100"
-            h="30vh"
-            w="30vh"
+            h="20vh"
+            w="20vh"
             justify="flex-end"
             _hover={{ bg: "teal.400" }}
           >
@@ -70,16 +70,34 @@ function Profile() {
             mt={4}
             ml={isNotSmallerScreen ? 4 : 0}
             bg="gray.100"
-            h="30vh"
-            w="30vh"
+            h="20vh"
+            w="20vh"
             justify="flex-end"
             _hover={{ bg: "green.400" }}
           >
-            <Icon color="black" p="4" as={SiChakraui} w="24" h="24"></Icon>
+            <Icon color="black" p="4" as={SiPhp} w="24" h="24"></Icon>
             <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
-              Chakra UI
+              PHP
             </Text>
           </Flex>
+          <Flex
+            rounded="xl"
+            direction="column"
+            mt={4}
+            ml={isNotSmallerScreen ? 4 : 0}
+            bg="gray.100"
+            h="20vh"
+            w="20vh"
+            justify="flex-end"
+            _hover={{ bg: "green.400" }}
+          >
+            <Icon color="black" p="4" as={SiLaravel} w="24" h="24"></Icon>
+            <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
+              Laravel
+            </Text>
+          </Flex>
+          
+
         </Flex>
       </Box>
     </Flex>

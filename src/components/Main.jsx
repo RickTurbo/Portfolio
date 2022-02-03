@@ -61,8 +61,8 @@ export const letter = {
 function Main() {
   const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
-
   const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
+
   return (
     <MotionContainer maxW="container.xl" initial="hidden" animate="visible">
       <Stack>

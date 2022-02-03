@@ -1,4 +1,4 @@
-import { Flex, VStack } from "@chakra-ui/react";
+import { Container, Flex, VStack } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Main from "./components/Main";
