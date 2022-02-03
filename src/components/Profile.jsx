@@ -39,8 +39,8 @@ function Profile() {
             direction="column"
             mt={4}
             bg="blue.400"
-            h="20vh"
-            w="20vh"
+            h="22vh"
+            w="22vh"
             justify="flex-end"
           >
             <Icon color="white" p="4" as={DiJavascript1} w="24" h="24"></Icon>
@@ -54,8 +54,8 @@ function Profile() {
             mt={4}
             ml={isNotSmallerScreen ? 4 : 0}
             bg="gray.100"
-            h="20vh"
-            w="20vh"
+            h="22vh"
+            w="22vh"
             justify="flex-end"
             _hover={{ bg: "teal.400" }}
           >
@@ -70,8 +70,8 @@ function Profile() {
             mt={4}
             ml={isNotSmallerScreen ? 4 : 0}
             bg="gray.100"
-            h="20vh"
-            w="20vh"
+            h="22vh"
+            w="22vh"
             justify="flex-end"
             _hover={{ bg: "green.400" }}
           >
@@ -86,8 +86,8 @@ function Profile() {
             mt={4}
             ml={isNotSmallerScreen ? 4 : 0}
             bg="gray.100"
-            h="20vh"
-            w="20vh"
+            h="22vh"
+            w="22vh"
             justify="flex-end"
             _hover={{ bg: "green.400" }}
           >
