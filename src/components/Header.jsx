@@ -34,16 +34,16 @@ function Header() {
         variants={fadeInUp}
       >
         <Spacer></Spacer>
-        <IconButton icon={<FaTwitter />} isRound="true"></IconButton>
-        <IconButton ml={2} icon={<FaInstagram />} isRound="true"></IconButton>
+        {/* <IconButton icon={<FaTwitter />} isRound="true"></IconButton>
+        <IconButton ml={2} icon={<FaInstagram />} isRound="true"></IconButton> */}
         <IconButton
-          ml={2}
+          // ml={2}
           icon={<FaGithub />}
           isRound="true"
           onClick={() => window.open("https://github.com/RickTurbo")}
         ></IconButton>
         <IconButton
-          ml={8}
+          ml={2}
           icon={isDark ? <FaSun /> : <FaMoon />}
           isRound="true"
           onClick={toggleColorMode}

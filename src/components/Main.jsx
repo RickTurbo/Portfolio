@@ -67,14 +67,6 @@ function Main() {
   return (
     <MotionContainer maxW="container.xl" initial="hidden" animate="visible">
       <Stack>
-        <Circle
-          position="absolute"
-          bg="blue.100"
-          opacity="0.1"
-          w="300px"
-          h="300px"
-          alignSelf="flex-end"
-        />
         <Flex
           direction={isNotSmallerScreen ? "row" : "column"}
           spacing="200px"
