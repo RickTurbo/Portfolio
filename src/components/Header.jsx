@@ -40,7 +40,7 @@ function Header() {
           // ml={2}
           icon={<FaGithub />}
           isRound="true"
-          onClick={() => window.open("https://github.com/RickTurbo")}
+          onClick={() => window.open("https://github.com/RickTurbo/Portfolio")}
         ></IconButton>
         <IconButton
           ml={2}
