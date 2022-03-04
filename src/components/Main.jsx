@@ -181,7 +181,7 @@ function Main() {
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                <Flex color="blue.300" justifyContent="center">
+                <Flex fontSize="xl" color="blue.300" justifyContent="center">
                   <Box pr="4">skil:</Box>
                   <Box pr="4">React, chakra-ui</Box>
                 </Flex>
@@ -232,7 +232,7 @@ function Main() {
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                <Flex color="blue.300" justifyContent="center">
+                <Flex fontSize="xl" color="blue.300" justifyContent="center">
                   <Box pr="4">skil:</Box>
                   <Box pr="4">html, scss, javascript</Box>
                 </Flex>
@@ -282,7 +282,7 @@ function Main() {
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                <Flex color="blue.300" justifyContent="center">
+                <Flex fontSize="xl" color="blue.300" justifyContent="center">
                   <Box pr="4">skil: </Box>
                   <Box pr="4">React, chakra-ui</Box>
                 </Flex>
@@ -332,7 +332,7 @@ function Main() {
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                <Flex color="blue.300" justifyContent="center">
+                <Flex fontSize="xl" color="blue.300" justifyContent="center">
                   <Box pr="4">skil:</Box>
                   <Box pr="4">React, chakra-ui, API</Box>
                 </Flex>
@@ -382,18 +382,17 @@ function Main() {
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                <Flex color="blue.300" justifyContent="center">
+                <Flex fontSize="xl" color="blue.300" justifyContent="center">
                   <Box pr="4">skil:</Box>
                   <Box pr="4">Laravel, tailwindcss, MySQL</Box>
                 </Flex>
                 <Box pt="4">
-                PHPの勉強から始め、Laravelに挑戦しました。バックエンドの勉強をしたことが初めてだったので、データベースの取り扱いなどに苦戦しましたが、ログイン機能をこんなに簡単に実装することが出来るんだなと驚き、自分が作ったアプリケーションが動いていることに感動しました。このアプリケーションは、基本的な機能しか実装することが出来なかったので、もっとLaravelについて学び幅広い実装ができるように成りたいです。
+                  PHPの勉強から始め、Laravelに挑戦しました。バックエンドの勉強をしたことが初めてだったので、データベースの取り扱いなどに苦戦しましたが、ログイン機能をこんなに簡単に実装することが出来るんだなと驚き、自分が作ったアプリケーションが動いていることに感動しました。このアプリケーションは、基本的な機能しか実装することが出来なかったので、もっとLaravelについて学び幅広い実装ができるように成りたいです。
                 </Box>
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
         </Box>
-
       </Grid>
     </MotionContainer>
   );
