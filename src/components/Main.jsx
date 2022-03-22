@@ -277,6 +277,7 @@ function Main() {
                     // eslint-disable-next-line react/jsx-no-duplicate-props
                     fontWeight="extrabold"
                   >
+                    
                     Todo App
                   </Box>
                 </AccordionButton>
